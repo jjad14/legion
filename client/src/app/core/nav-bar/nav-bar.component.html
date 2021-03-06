@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img class="logo" src="assets/images/logo.png" style="max-height: 70px;" alt="logo" [routerLink]="['/']">
+
+    <button class="navbar-toggler" type="button" (click)="collapse.toggle()" aria-controls="main-nav" aria-expanded="false" aria-label="Navbar Dropdown">
+      <span class="navbar-toggler-icon d-flex align-items-center justify-content-center"></span>
+    </button>
+
+    <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse" >
+
+      <ul class="navbar-nav mr-auto d-flex justify-content-center align-items-center">
+        <li class="nav-item active">
+            <a class=""
+                [routerLink]="['/']" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact: true}">
+                Home
+            </a>  
+        </li>
+        <li class="nav-item">
+            <a class="" [routerLink]="['/shop']" routerLinkActive="active">Shop</a>
+        </li>
+        <li class="nav-item">
+            <a class="" [routerLink]="['/about']">About</a>
+        </li>
+        <ng-container *ngIf="(currentUser$ | async)">
+            <li class="nav-item">
+                <a *appHasRole='["Admin", "Employee"]' class="p-2" [routerLink]="['/admin']">Admin</a>
+            </li>
+        </ng-container>
+      </ul>
+      <ul class="navbar-nav ml-auto d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+            <a routerLink="/cart" class="position-relative">
+                <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
+                <div class="cart-no" *ngIf="(cart$ | async) as cart">
+                    {{ cart.items.length }}
+                </div>
+            </a>
+        </li>
+
+        <ng-container *ngIf="(currentUser$ | async) === null">
+            <li class="nav-item">
+                <a class="" [routerLink]="['/account/login']">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="" [routerLink]="['/account/register']">Sign up</a>
+            </li>
+        </ng-container>
+
+        <ng-container *ngIf="(currentUser$ | async) as user">
+            <li class="nav-item">
+                <div class="dropdown ml-3 mr-5" dropdown>
+                    <a class="dropdown-toggle" style="cursor: pointer;" dropdownToggle>
+                        <strong>Welcome {{ user.displayName }}</strong>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="cursor: pointer;" *dropdownMenu>
+                        <a class="dropdown-item d-flex align-items-center py-2" [routerLink]="['/cart']">
+                            <i class="fa fa-shopping-bag mr-3"></i>
+                            View Cart
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center py-2" [routerLink]="['/orders']">
+                            <i class="fa fa-history mr-3"></i>
+                            View Orders
+                        </a>
+                        
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item d-flex align-items-center py-2" (click)="onLogout()">
+                            <i class="fa fa-sign-out mr-3"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ng-container>
+      </ul>
+    </ngx-navbar-collapse>
+</nav>

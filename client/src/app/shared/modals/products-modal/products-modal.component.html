@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left"><strong>{{ product.name }}</strong></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form #productForm="ngForm" id="productForm" class="align-middle">
+        <div class="d-flex flex-column">
+            <div class="my-2">
+                <label class="mr-2">Product Name: </label>
+                <input type="text" 
+                       class="form-control w-100"
+                       [(ngModel)]="name"
+                       [ngModelOptions]="{standalone: true}"
+                       value={{name}}>
+            </div>
+            <div class="my-2">
+                <label class="mr-2">Product Description: </label>
+                <input type="text"
+                       class="form-control w-100"
+                       [(ngModel)]="description"
+                       [ngModelOptions]="{standalone: true}"
+                       value={{description}}>
+            </div>
+            <div class="my-2">
+                <label class="mr-2">Product Price: $</label>
+                <input type="number" 
+                       class="form-control w-100"
+                       min="1"
+                       [(ngModel)]="price"
+                       [ngModelOptions]="{standalone: true}"
+                       value={{price}}>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-warning" (click)="bsModalRef.hide()">Cancel</button>
+    <button type="button" class="btn btn-success" (click)="updateProduct()">Submit</button>
+</div>

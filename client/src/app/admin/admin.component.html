@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <tabset class="admin-tabset">
+                <tab heading="User Management" *appHasRole='["Admin"]'>
+                    <div class="container">
+                        <app-admin-user-management></app-admin-user-management>
+                    </div>
+                </tab>
+                <tab heading="Create Product" id="tab1" *appHasRole='["Admin", "Employee"]'>
+                    <div class="container">
+                        <app-admin-products></app-admin-products>
+                    </div>
+                </tab>
+                <tab heading="Edit Product" *appHasRole='["Admin", "Employee"]'>
+                    <div class="container">
+                        <app-admin-delete-product></app-admin-delete-product>
+                    </div>
+                </tab>
+            </tabset>    
+        </div>
+    </div>
+</div>

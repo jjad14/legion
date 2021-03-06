@@ -1,0 +1,16 @@
+<div class="row">
+    <table class="table">
+        <tr>
+            <th style="width: 30%;">Username</th>
+            <th style="width: 30%;">Active Roles</th>
+            <th style="width: 20%;">Edit</th>
+            <th style="width: 20%;">Delete</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.displayName}}</td>
+            <td>{{user.roles}}</td>
+            <td><button class="btn btn-info" (click)="openRolesModal(user)">Edit Roles</button></td>
+            <td><button class="btn btn-info" [disabled]="user.roles.indexOf('Admin') > -1" (click)="deleteUser(user)">Delete User</button></td>
+        </tr>
+    </table>
+</div>

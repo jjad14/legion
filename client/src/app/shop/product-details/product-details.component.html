@@ -1,0 +1,39 @@
+<div class="container my-5">
+    <div class="row w-100 mb-5" *ngIf="product">
+
+        <div class="col-md-6 col-12">
+            <img class="img-fluid w-100 border shadow" 
+                 src="{{product.pictureUrl}}" 
+                 alt="{{product.name}}"
+                 (click)="openImageModal(product)">
+        </div>
+
+        <div class="col-md-5 offset-md-1 col-12">
+            <hr class="col-sm-12"/>
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h3>{{ product.name }}</h3>
+                <p style="font-size: 1.5em;">{{ product.price | currency}} CDN</p>
+
+                <div class="d-flex justify-content-start align-items-center">
+                    <i (click)="decrementItem()" class="fa fa-minus-circle text-warning mr-2" style="cursor: pointer; font-size: 2rem;"></i>
+                    <span class="font-weight-bold" style="font-size: 1.5rem;">{{ quantity }}</span>
+                    <i (click)="incrementItem()"  class="fa fa-plus-circle text-warning mx-2" style="cursor: pointer; font-size: 2rem;"></i>
+                    <button class="btn btn-primary ml-4" id="buy">Add to Cart</button>
+                </div>
+            </div>  
+            
+            <hr class="col-sm-12" />
+        
+            <div class="d-flex flex-column mt-3 justify-content-start align-items-start">
+                <h5>About</h5>
+
+                <p>Brand: {{ product.productBrand }}</p>
+                <p>Categoriy: {{ product.productType }}</p>
+                
+                <h6>Description</h6>
+                <p>{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

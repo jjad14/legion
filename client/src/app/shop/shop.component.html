@@ -1,0 +1,122 @@
+<div class="container">
+    <div class="row">
+
+        <!-- Filter block -->
+        <section class="col-md-3 mt-5 shadow d-none d-md-block" id="filter-section">
+            <ng-container *ngIf="types && brands">
+                <h5 class="text-secondary ml-3 mt-4 mb-4">Sort</h5>
+                <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)"> 
+                    <option *ngFor="let sort of sortOptions"
+                            [selected]="shopParams.sort === sort.value"
+                            [value]="sort.value">
+                            {{ sort.name }}
+                    </option>
+                </select>
+
+                <h5 class="text-secondary ml-3">Brands</h5>
+                <ul class="list-group my-3">
+                    <li class="list-group-item" 
+                        *ngFor="let brand of brands"
+                        [class.active]="brand.id === this.shopParams.brandId"
+                        [value]="brand.id"
+                        (click)="onBrandSelected(brand.id)">
+                        {{ brand.name }}
+                    </li>
+                </ul>
+
+                <h5 class="text-secondary ml-3">Categories</h5>
+                <ul class="list-group my-3">
+                    <li class="list-group-item" 
+                        *ngFor="let type of types"
+                        [class.active]="type.id === this.shopParams.typeId"
+                        [value]="type.id"
+                        (click)="onTypeSelected(type.id)">
+                        {{ type.name }}
+                    </li>
+                </ul>
+            </ng-container>
+        </section>
+
+        <!-- XS/SM Screen Filter and Sort -->
+        <section class="d-md-none col-12">
+            <ng-container *ngIf="types && brands">
+                <accordion [isAnimated]="true">
+                    <accordion-group>
+                        <button class="btn btn-link btn-block clearfix" accordion-heading type="button">
+                        <div class="pull-left float-left">Filter and Sort Products</div>
+                            <span class="badge badge-secondary float-right pull-right">
+                                <i class="fa fa-filter fa-2x text-dark"></i>
+                            </span>
+                        </button>
+      
+                         <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)"> 
+                              <option *ngFor="let sort of sortOptions"
+                                      [selected]="shopParams.sort === sort.value"
+                                      [value]="sort.value">
+                                      {{ sort.name }}
+                              </option>
+                          </select>
+          
+                          <h5 class="text-secondary ml-3">Brands</h5>
+                          <ul class="list-group my-3">
+                              <li class="list-group-item" 
+                                  *ngFor="let brand of brands"
+                                  [class.active]="brand.id === this.shopParams.brandId"
+                                  [value]="brand.id"
+                                  (click)="onBrandSelected(brand.id)">
+                                  {{ brand.name }}
+                              </li>
+                          </ul>
+          
+                          <h5 class="text-secondary ml-3">Categories</h5>
+                          <ul class="list-group my-3">
+                              <li class="list-group-item" 
+                                  *ngFor="let type of types"
+                                  [class.active]="type.id === this.shopParams.typeId"
+                                  [value]="type.id"
+                                  (click)="onTypeSelected(type.id)">
+                                  {{ type.name }}
+                              </li>
+                          </ul>
+  
+                    </accordion-group>
+                </accordion> 
+            </ng-container>
+        </section>
+
+        <!-- Search block -->
+        <section class="col-md-9 my-2">
+
+            <div class="d-flex justify-content-between align-items-center pb-2 flex-md-row flex-column col-12">
+                <app-pagining-header
+                        [totalCount]="totalCount"
+                        [pageNumber]="this.shopParams.pageNumber"
+                        [pageSize]="this.shopParams.pageSize">
+                </app-pagining-header>
+                
+                <div class="form-inline mt-2" *ngIf="products">
+                    <input class="form-control" (keyup.enter)="onSearch()" #search style="width: 250px;" placeholder="Search" type="text">
+                    <div class="">
+                        <button class="btn-outline-success my-2 ml-3" (click)="onSearch()">Search</button>
+                        <button class="btn-outline-warning ml-2 my-2" (click)="onReset()">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products and Paginator -->
+            <div class="row col-xs-12">
+                <div class="col-md-4 col-12 mb-4 mt-2" *ngFor="let item of products">
+                  <app-product-item [product]="item" ></app-product-item>
+                </div>
+              </div>
+              <div class="d-flex mt-3 justify-content-center" *ngIf="totalCount > 0">
+                <app-paginator
+                        [totalCount]="totalCount"
+                        [pageNumber]="shopParams.pageNumber"
+                        [pageSize]="shopParams.pageSize"
+                        (pageChanged)="onPageChanged($event)">
+                </app-paginator>
+            </div>
+        </section>
+    </div>
+</div>   

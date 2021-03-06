@@ -1,0 +1,43 @@
+.cart-no {
+    position: absolute;
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 1em;
+    background: red;
+    color: white;
+    text-align: center;
+    top: -12px;
+    right: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+    font-size: 1rem;
+
+    &.active {
+        color: red;
+    }
+}
+
+.logo {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// .dropdown-toggle, .dropdown-item  {
+//     cursor: pointer;
+// }
+
+// .nav-btns a {
+//     margin-left: 30px;
+//     margin-right: 30px;
+// }
+
+
+// .nav-btns a:hover {
+//     font-size: 18px;
+// }

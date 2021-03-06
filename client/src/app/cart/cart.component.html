@@ -1,0 +1,35 @@
+<div class="container mt-2">
+    <div class="my-5 text-center" *ngIf="(cart$ | async) === null">
+        <h3>Your Cart is empty</h3>
+    </div>
+    
+    <div *ngIf="cart$ | async">
+        <div class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-5 mb-1">
+                        <app-cart-summary 
+                            (decrement)="decrementItem($event)"
+                            (increment)="incrementItem($event)"
+                            (remove)="removeItem($event)"
+                            [items]="(cart$ | async).items">
+                        </app-cart-summary>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <app-order-totals 
+                            *ngIf="(cartTotals$ | async)"
+                            [shippingPrice]="(cartTotals$ | async).shipping"
+                            [subtotal]="(cartTotals$ | async).subtotal" 
+                            [total]="(cartTotals$ | async).total">
+                        </app-order-totals>
+                        <a class="btn btn-outline-primary py-2 d-md-inline float-md-right d-block" routerLink="/checkout">
+                            Proceed to checkout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

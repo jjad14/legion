@@ -1,0 +1,298 @@
+[
+    {
+      "Name": "Hat 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 20,
+      "PictureUrl": "images/products/hat1.png",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 15,
+      "PictureUrl": "images/products/hat2.png",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 18,
+      "PictureUrl": "images/products/hat3.jpg",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 4",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 10,
+      "PictureUrl": "images/products/hat4.jpg",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 5",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 10,
+      "PictureUrl": "images/products/hat5.jpg",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 6",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 25,
+      "PictureUrl": "images/products/hat6.jpg",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Hat 7",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 13,
+      "PictureUrl": "images/products/hat7.jpg",
+      "ProductTypeId": 2,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Accessory 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 500,
+      "PictureUrl": "images/products/accessories1.jpg",
+      "ProductTypeId": 1,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Accessory 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 8,
+      "PictureUrl": "images/products/accessories2.jpg",
+      "ProductTypeId": 1,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Accessory 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 5,
+      "PictureUrl": "images/products/accessories3.jpg",
+      "ProductTypeId": 1,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Accessory 4",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 200,
+      "PictureUrl": "images/products/accessories4.jpg",
+      "ProductTypeId": 1,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Accessory 5",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 50,
+      "PictureUrl": "images/products/accessories5.jpg",
+      "ProductTypeId": 1,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Dress 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 200,
+      "PictureUrl": "images/products/dress1.png",
+      "ProductTypeId": 3,
+      "ProductBrandId": 3
+    },
+    {
+      "Name": "Dress 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 150,
+      "PictureUrl": "images/products/dress2.png",
+      "ProductTypeId": 3,
+      "ProductBrandId": 3
+    },
+    {
+      "Name": "Pants 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 80,
+      "PictureUrl": "images/products/pants1.jpg",
+      "ProductTypeId": 4,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Pants 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 70,
+      "PictureUrl": "images/products/pants2.jpg",
+      "ProductTypeId": 4,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Pants 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 100,
+      "PictureUrl": "images/products/pants3.jpg",
+      "ProductTypeId": 4,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Pants 4",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 89,
+      "PictureUrl": "images/products/pants4.jpg",
+      "ProductTypeId": 4,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Pants 5",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 75,
+      "PictureUrl": "images/products/pants5.jpg",
+      "ProductTypeId": 4,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Shirt 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 35,
+      "PictureUrl": "images/products/shirt1.jpg",
+      "ProductTypeId": 5,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Shirt 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 35,
+      "PictureUrl": "images/products/shirt2.jpg",
+      "ProductTypeId": 5,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Shirt 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 20,
+      "PictureUrl": "images/products/shirt3.jpg",
+      "ProductTypeId": 5,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Shirt 4",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 20,
+      "PictureUrl": "images/products/shirt4.png",
+      "ProductTypeId": 5,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Shirt 5",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 40,
+      "PictureUrl": "images/products/shirt5.png",
+      "ProductTypeId": 5,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Sweater 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 45,
+      "PictureUrl": "images/products/sweater1.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 45,
+      "PictureUrl": "images/products/sweater2.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 45,
+      "PictureUrl": "images/products/sweater3.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 4",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 50,
+      "PictureUrl": "images/products/sweater4.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 5",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 50,
+      "PictureUrl": "images/products/sweater5.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 6",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 50,
+      "PictureUrl": "images/products/sweater6.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 7",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 40,
+      "PictureUrl": "images/products/sweater7.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 8",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 40,
+      "PictureUrl": "images/products/sweater8.png",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 9",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 30,
+      "PictureUrl": "images/products/sweater9.jpg",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Sweater 10",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 80,
+      "PictureUrl": "images/products/sweater10.jpg",
+      "ProductTypeId": 7,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "Shoes 1",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 180,
+      "PictureUrl": "images/products/shoe1.png",
+      "ProductTypeId": 6,
+      "ProductBrandId": 7
+    },
+    {
+      "Name": "Shoes 2",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 120,
+      "PictureUrl": "images/products/shoe2.png",
+      "ProductTypeId": 6,
+      "ProductBrandId": 7
+    },
+    {
+        "Name": "Shoes 3",
+      "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+      "Price": 250,
+      "PictureUrl": "images/products/shoe3.png",
+      "ProductTypeId": 6,
+      "ProductBrandId": 7
+    }
+]

@@ -1,0 +1,55 @@
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-8">
+        <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+              <h1 class="h3 mb-3 font-weight-normal">Create Product</h1>
+            </div>
+          
+            <app-text-input formControlName="name" [label]="'Product Name'" [type]="'text'"></app-text-input>
+            <app-text-input formControlName="description" [label]="'Description'" [type]="'text'"></app-text-input>
+            <app-text-input formControlName="price" [label]="'Price'" [type]="'number'"></app-text-input>
+
+            <div class="d-flex flex-row justify-content-around mb-5">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                            aria-controls="dropdown-basic" >
+                      Brand <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic"  *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic" style="cursor: pointer;">
+                      <li role="menuitem" 
+                          *ngFor="let brand of brands" 
+                          value={{brand.id}}
+                          (click)="brandSelected(brand)"><a>{{brand.name}}</a></li>
+                    </ul>
+                  </div>
+                  
+                  <label for="brand" #brand></label>
+    
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                            aria-controls="dropdown-basic">
+                      Type <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic" style="cursor: pointer;">
+                      <li role="menuitem" 
+                          *ngFor="let type of types" 
+                          value={{type.id}}
+                          (click)="typeSelected(type)"><a>{{type.name}}</a></li>
+                    </ul>
+                </div>
+                <label for="type" #type></label>
+            </div>
+
+            
+            <ul class="text-danger list-unstyled" *ngIf="errors">
+                <li *ngFor="let error of errors">
+                    {{ error }}
+                </li>
+            </ul>
+
+            <button [disabled]="adminForm.invalid" class="btn btn-md btn-success btn-block" type="submit">Create Product</button>
+        </form>
+    </div>
+</div>
